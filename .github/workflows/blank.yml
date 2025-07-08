@@ -1,0 +1,10 @@
+name: First workflow
+on: [workflow_dispatch]
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kernel version
+        run: uname -r
+      - name: OS information
+        run: cat /etc/os-release
